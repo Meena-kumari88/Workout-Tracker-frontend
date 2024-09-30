@@ -1,0 +1,138 @@
+/* General styles for desktop and large screens */
+.dashboard-container {
+  background-image: url('https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-70842.jpg');
+  background-size: cover;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: center;
+  padding: 20px; 
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0; 
+  position: relative; 
+  width: 100%; 
+}
+
+.workout-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 7rem; 
+  position: relative; 
+  backdrop-filter: blur(10px); 
+  z-index: 0; 
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.workout-table th,
+.workout-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.workout-table td {
+  color: white;
+  font-weight: bold;
+}
+
+.workout-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets and small screens (width between 768px and 1024px) */
+@media (max-width: 1024px) {
+  .dashboard-container {
+    padding: 15px;
+  }
+
+  .dashboard-header {
+    flex-direction: column; 
+    margin-bottom: 15px;
+  }
+  .form-container {
+    margin-top: 8rem;
+  }
+
+  .workout-table {
+    margin-top: 10rem;
+  }
+
+  .workout-table th,
+  .workout-table td {
+    padding: 6px; 
+  }
+}
+
+/* For miniPads and medium devices (width between 600px and 768px) */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 10px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .form-container {
+    margin-top: 8rem;
+  }
+
+  .workout-table {
+    margin-top: 5rem; 
+  }
+
+  .workout-table th,
+  .workout-table td {
+    padding: 5px; 
+    font-size: 14px; 
+  }
+}
+
+/* For small devices (width below 600px) */
+@media (max-width: 600px) {
+  .dashboard-container {
+    padding: 5px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    margin-bottom: 5px;
+    font-size: 14px; 
+  }
+
+  .form-container {
+    margin: 10px 0;
+    flex-direction: column; 
+    margin-top: 5rem;
+  }
+
+  .workout-table {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 10rem;
+  }
+
+  .workout-table th,
+  .workout-table td {
+    padding: 4px;
+    font-size: 12px; 
+  }
+}

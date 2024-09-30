@@ -1,0 +1,170 @@
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+
+.login-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-image {
+  width: 100%; 
+  max-width: 600px; 
+  height: auto;
+  border-radius: 8px;
+  margin-top: 6rem;
+}
+
+
+.login-right {
+  flex: 1.5; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 100%;
+  padding: 2rem;
+  max-width: 71rem;
+  margin-top: 6rem;
+  margin-left: -3rem;
+  height: 38rem;
+}
+
+.login-form h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 5px;
+  color: #333;
+  text-shadow: 2px 2px 4px #85e3d4;
+}
+
+.login-form span {
+  font-size: 2.2rem;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.login-form input:focus {
+  border-color: #000;
+  outline: none;
+}
+
+.login-button {
+  width: 15%;
+  padding: 10px;
+  background-color: #164f50;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-shadow: 2px 2px 4px #85e3d4;
+}
+
+.login-button:hover {
+  background-color:#B0B0B0;
+  color: #000;
+  text-shadow: 2px 2px 4px #85e3d4;
+}
+.login-form p{
+  color: #000;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #85e3d4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #85e3d4; 
+  }
+
+  
+  .login-left {
+    display: none;
+  }
+
+  .login-right {
+    flex: none;
+    width: 100%;
+    padding: 0;
+    height: auto; 
+  }
+
+  .login-form {
+    width: 100%;
+    height: auto;
+    max-width: 723px;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('https://th.bing.com/th/id/OIG2.f_4_SFVm9nJh.8HeFB7_?pid=ImgGn'); /* Example image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .login-form h2, .login-form span, .login-form input, .login-button {
+    color: white; 
+  }
+
+  .login-form input {
+    background-color: rgba(255, 255, 255, 0.3); 
+    color: #000;
+    font-weight: bold;
+    border: 1px solid white; 
+  }
+
+  .login-form input::placeholder {
+    color: black;
+  }
+
+  .login-form input:focus {
+    border-color: #007bff; 
+    background-color: rgba(255, 255, 255, 0.5); 
+  }
+
+  .login-button {
+    width: 100%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form {
+    padding: 1.5rem; 
+  }
+
+  .login-form input {
+    padding: 8px; 
+    font-size: 0.9rem; 
+  }
+
+  .login-button {
+    padding: 8px; 
+    font-size: 0.9rem; 
+  }
+}
