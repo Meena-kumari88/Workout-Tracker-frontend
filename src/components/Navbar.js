@@ -11,6 +11,7 @@ function Navbar() {
         
       </div>
       <div className="navbar-right">
+        <a href="#explore" className="btn">Explore</a>
         <Link to="/signup" className="btn">SignUp</Link>
         <Link to="/login" className="btn">Login</Link>
       </div>

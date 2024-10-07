@@ -12,8 +12,8 @@ function Home() {
         <div className="home-content">
           
         </div>
-        <h1>Your Health, Your Priority</h1>
-        <div className="card-container">
+        <h1 id='explore'>Your Health, Your Priority</h1>
+        <div className="card-container" >
           <div className="card">
             <img src="https://www.shutterstock.com/image-photo/beautiful-athletic-couple-cyclists-train-600nw-2277366227.jpg" alt="Card 1" className="card-image" />
             <h2 className="card-title">Cycling</h2>
