@@ -27,7 +27,7 @@ const LogExercise = ({ onClose }) => {
     const userId = decodedToken.id;
   
     try {
-      await axios.post('http://localhost:5000/api/workouts', {
+      await axios.post('https://workout-tracker-backend-3.onrender.com/api/workouts', {
         user_id: userId,
         type,
         duration,
