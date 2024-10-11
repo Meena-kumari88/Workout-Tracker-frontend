@@ -19,7 +19,7 @@ const Dashboard = () => {
       const decodedToken = jwtDecode(token);
       const userId = decodedToken.id;
 
-      const response = await axios.get(`http://localhost:5000/api/workouts/${userId}`, {
+      const response = await axios.get(`https://workout-tracker-backend-3.onrender.com/api/workouts/${userId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
