@@ -14,7 +14,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/users/signup', {
+      const response = await axios.post('https://workout-tracker-backend-3.onrender.com/api/users/signup', {
         name,
         email,
         password,
